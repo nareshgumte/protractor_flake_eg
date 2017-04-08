@@ -1,0 +1,34 @@
+{
+    "name": "protractor-demo",
+    "version": "0.0.1",
+    "author": "Julie Ralph <ju.ralph@gmail.com>",
+    "description": "A demo app with Protractor tests",
+    "scripts": {
+        "start": "node app/expressserver.js",
+        "protractor": "node_modules/.bin/protractor test/conf.js",
+        "protractor-flake": "node_modules/.bin/protractor-flake --max-attempts=5 --color=magenta -- test/conf.js",
+        "webdriver-start": "./node_modules/protractor/bin/webdriver-manager update && ./node_modules/protractor/bin/webdriver-manager start",
+        "test": "npm run protractor",
+        "test:flake": "npm run protractor-flake"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/juliemr/protractor-demo"
+    },
+    "dependencies": {
+        "express": "4.15.2",
+        "protractor": "5.1.1",
+        "mkdirp": "0.5.1",
+        "q": "1.5.0",
+        "firefox-profile": "0.5.0",
+        "chromedriver": "2.29.0"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "jasmine-json-test-reporter": "^1.0.0-beta",
+        "jasmine-reporters": "^2.2.1",
+        "jasmine-spec-reporter": "^3.2.0",
+        "lodash-es": "^4.17.4",
+        "protractor-flake": "^2.5.0"
+    }
+}
