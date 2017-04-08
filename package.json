@@ -1,7 +1,7 @@
 {
-    "name": "protractor-demo",
+    "name": "protractor-flake-demo",
     "version": "0.0.1",
-    "author": "Julie Ralph <ju.ralph@gmail.com>",
+    "author": "NG",
     "description": "A demo app with Protractor tests",
     "scripts": {
         "start": "node app/expressserver.js",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/juliemr/protractor-demo"
+        "url": "https://github.com/nareshgumte/protractor_flake_eg"
     },
     "dependencies": {
         "express": "4.15.2",
